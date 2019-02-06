@@ -1,2 +1,2 @@
-# final-project-for-interactive-graphics-course-human-warrior
-Human Warrior
+# final-project-for-interactive-graphics-course-Clockwork-Droid
+
