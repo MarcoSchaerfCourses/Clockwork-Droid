@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<title>Suleyman's Droid Animation With Key Frames</title>
+
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="libs/Three.js"></script>
+  <script src="libs/Tween.js"></script>
+	<script src="libs/jquery-1.6.4.js"></script>
+  <script src="libs/jquery.mousewheel.js"></script>
+	<script src="libs/RequestAnimationFrame.js"></script>
+	<script src="sim/sim.js"></script>
+	<script src="sim/animation.js"></script>
+	<script src="sim/ColladaLoader.js"></script>
+
+<!-- <script src="../three97/examples/js/controls/OrbitControls.js"></script> -->
+<style media="screen">
+body {
+	/*overflow-y:hidden;*/
+	background-image: url("lab.jpg");
+	background-repeat: no-repeat;
+	background-size: 1400px 680px;;
+
+}
+</style>
+	<script src="droid.js"></script>
+	<script>
+
+	var renderer = null;
+	var scene = null;
+	var camera = null;
+	var mesh = null;
+
+
+	$(document).ready(
+		function() {
+			var container = document.getElementById("container");
+			var app = new DroidApp();
+			app.init({ container: container });
+			app.run();
+		}
+	);
+
+	</script>
+
+</head>
+<body >
+	<center><h1 style="color:white;">Clockwork Droid With Protection Shield</h1></center>
+
+
+    <div id="container" style=" height:70%; position:absolute; margin-top: 190px; width: 100%; cursor:pointer;"></div>
+	<div id="prompt" style="width:95%; height:6%; bottom:0px; text-align:center; position:absolute;color:white; font-size:20px; cursor:pointer;">
+	Click to start/stop the animation
+	</div>
+	</div>
+
+
+</body>
+</html>
